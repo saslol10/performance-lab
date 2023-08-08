@@ -52,16 +52,16 @@ public class Task3 {
                                         if (testObject.get("id").getAsString().equals(valueObject.get("id").getAsString())) {
                                             testObject.addProperty("value", valueObject.get("value").getAsString());
                                             //System.out.println(testObject);
-                                            if(testObject.has("values")){
-                                                updateValueOfValues(testObject, valuesArray);
-                                            }
+
                                         }
                                     }
                                     //System.out.println(valueObject);
                                 }
                             }
                         }
-
+                        if(testObject.has("values")){
+                            updateValueOfValues(testObject, valuesArray);
+                        }
                     }
 
                 }
